@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Scooters rentals in Cozumel">
+    <title>Scooters Rentals</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,400&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <script src="js/responsive.js"></script>
+    <script src="js/weather.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/small.css">
+    <link type="text/css" rel="stylesheet" href="css/medium.css">
+    <link type="text/css" rel="stylesheet" href="css/large.css">
+</head>
+
+<body onload="renderDate();  apiCall('3530103');  update(); setActivity('Preston');">
+    <div id="top">
+
+        <header><img src="images/icon2.png" alt="logo">
+            <div class="headings">
+                <h1>Scooters</h1>
+                <div class="subtitles">Cozumel closer to You.</div>
+            </div>
+        </header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" id="buttom" onclick="toggleMenu()">&#9776;</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="">Language</a></li>
+            </ul>
+
+        </nav>
+    </div>
+    <main>
+
+        <h2 class="title">Cozumel</h2>
+        <hr>
+
+
+        <div class="title">
+
+            <h2 class="title">Explore Cozumel at your pace, and with your own plan.</h2>
+            <h2>We can help you to plan for the best road tryps and to find those remote unique places that will be a treasure memory. Ask us.</h2>
+        </div>
+
+        <section class="midle">
+            <h6>.</h6>
+            <div class="main_img">
+                <div id="mainImage">
+                    <img class="home_img" src="/lesson-13/images/beach1.jpg" alt="Cozumel images">
+                </div>
+                <section class="banner">
+
+                    <h2 id="bannerTitle">Today Island Weather</h2>
+                    <hr>
+                    <h3>Currently: <span class="info" id="current"></span></h3>
+                    <h3>Current Temp: <span class="info" id="temp"></span>&#176;C</h3>
+
+                    <h3>Humidity: <span class="info" id="humidity"></span>%</h3>
+                    <h3>Wind Speed: <span class="info" id="wind"></span>MPH</h3>
+                </section>
+            </div>
+
+        </section>
+
+        <br>
+        <h2>Our rental vehicles are the best way to move free in the island. Take a look.</h2>
+        <div id="products">
+            <div id="hondaPic1">
+                <img id="honda1" src="/lesson-13/images/honda1.jpg" alt="Honda offer images small">
+                <h2>Honda Metro Scooter</h2>
+            </div>
+            <div id="hondaPic2">
+                <img id="honda2" src="/lesson-13/images/honda2.jpg" alt="Honda offer images medium">
+                <h2>Honda Dio Scooter</h2>
+            </div>
+            <div id="hondaPic3">
+                <img id="honda3" src="/lesson-13/images/honda3.jpg" alt="Honda offer images big">
+                <h2>Honda PCX150 Scooter</h2>
+            </div>
+            <div id="hondaPic4">
+                <img id="honda4" src="/lesson-13/images/honda4.jpg" alt="Honda offer images ATV">
+                <h2>Honda Pioneer ATV</h2>
+            </div>
+            <div id="jeepPic1">
+                <img id="jeep1" src="/lesson-13/images/jeep1.jpg" alt="Jeep offer images first">
+                <h2>Jeep Wrangler - 4 door with A/C</h2>
+            </div>
+            <div id="jeepPic2">
+                <img id="jeep2" src="/lesson-13/images/jeep2.jpg" alt="Honda offer images second">
+                <h2>Jeep Wrangler - 2 door</h2>
+            </div>
+        </div>
+
+
+
+
+        <div>
+            <h2 class="forecast">5 Days Forecast</h2>
+
+            <div class="flex">
+                <div class="flex-col">
+                    <span class="col-head" id="day1"></span>
+                    <img class="img-col" id="icon1" src="#" alt="#">
+                    <span class="data" id="temp1"></span>
+                </div>
+                <div class="flex-col">
+                    <span class="col-head" id="day2"></span>
+                    <img class="img-col" id="icon2" src="#" alt="#">
+                    <span class="data" id="temp2"></span>
+
+                </div>
+
+                <div class="flex-col">
+                    <span class="col-head" id="day3"></span>
+                    <img class="img-col" id="icon3" src="#" alt="#">
+                    <span class="data" id="temp3"></span>
+
+                </div>
+                <div class="flex-col">
+                    <span class="col-head" id="day4"></span>
+                    <img class="img-col" id="icon4" src="#" alt="#">
+                    <span class="data" id="temp4"></span>
+                </div>
+                <div class="flex-col">
+                    <span class="col-head" id="day5"></span>
+                    <img class="img-col" id="icon5" src="#" alt="#">
+                    <span class="data" id="temp5"></span>
+                </div>
+            </div>
+        </div>
+        <br>
+
+
+
+
+        <div class="contain">
+            <div class="contact">
+                <h5 class="firstline">Scooters</h5>
+                <h5>30 N 1st E</h5>
+                <h5>Cozumel, MX 83263</h5>
+                <h5> &#x260E; 999.999.9999</h5>
+                <h5>www.scooters.com</h5>
+                <div class="contacticons">
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+                        <img class="imgicon" src="images/facebook.png" alt="facebook logo"></a>
+                    <a href="https://no.pinterest.com/" target="_blank" rel="noopener">
+                        <img class="imgicon" src="images/pinterest.png" alt="pinterest logo logo">
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener">
+                        <img class="imgicon" src="images/youtube.png" alt="youtube logo">
+                    </a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener">
+                        <img class="imgicon" src="images/twiter.png" alt="youtube logo">
+                    </a>
+                    <a href="https://www.google.com/" target="_blank" rel="noopener">
+                        <img class="imgicon" src="images/google.png" alt="youtube logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <footer>
+        <h4 id="date">.</h4>
+        <p>Last Updated: <span id="update"></span></p>
+        <h4>&copy; Carlos Gerez 2020 |
+            <a id="final" href="https://www.byui.edu/">BYUI</a>
+
+        </h4>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+            h1,
+            footer {
+                text-align: center;
+                padding: 20px;
+            }
+            
+            main {
+                margin: 0 auto;
+            }
+            
+            .cards {
+                display: grid;
+                grid-template-columns: 1fr;
+                justify-content: center;
+                background-color: lightgrey;
+                border-radius: 10px;
+                box-shadow: 5px -5px 37px 20px #888888;
+                padding: 15px;
+            }
+            
+            img {
+                max-width: 50%;
+                box-shadow: 5px 5px 5px 8px #888888;
+            }
+            
+            section {
+                background-color: lavender;
+                text-align: center;
+                padding-bottom: 20px;
+                border: 1px solid black;
+                margin: 2px;
+            }
+            
+            h1,
+            h2 {
+                color: rgb(118, 108, 153);
+                font-family: 'Asul', sans-serif;
+            }
+            
+            h3 {
+                color: black;
+            }
+            
+            @media only screen and (min-width: 34.5em) {
+                .cards {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+            
+            @media only screen and (min-width: 64rem) {
+                .cards {
+                    grid-template-columns: repeat(4, 1fr);
+                }
+            }

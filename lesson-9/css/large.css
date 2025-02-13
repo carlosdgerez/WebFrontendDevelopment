@@ -1,0 +1,30 @@
+    @media only screen and (min-width: 60em) {
+        header img {
+            width: 10%;
+        }
+        .img-center {
+            width: 35%;
+        }
+        .banner {
+            top: 20%;
+            right: 60%;
+        }
+        .mapsmall {
+            display: none;
+        }
+        .maplarge {
+            display: block;
+        }
+        #hometown {
+            width: 75%;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: "prestoninfo fishhaveninfo sodaspringinfo" "preston fishhaven sodaspring";
+        }
+        section {
+            display: block;
+            margin: 20px;
+        }
+    }

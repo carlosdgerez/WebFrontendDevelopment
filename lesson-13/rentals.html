@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Scooters rentals in Cozumel.">
+    <title>Rentals</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,400&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito%7cUbuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <script src="js/lazy.js" defer></script>
+
+
+    <script src="js/fonts.js"></script>
+
+
+    <script src="js/responsive.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/small.css">
+    <link type="text/css" rel="stylesheet" href="css/medium.css">
+    <link type="text/css" rel="stylesheet" href="css/large.css">
+</head>
+
+<body onload="renderDate(); update(); loadRents(); loadFonts();">
+    <div id="top">
+
+        <header><img src="images/icon2.png" alt="logo">
+            <div class="headings">
+                <h1>Scooters</h1>
+                <div class="subtitles">Cozumel closer to you.</div>
+            </div>
+        </header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" id="buttom" onclick="toggleMenu()">&#9776;</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="">Language</a></li>
+            </ul>
+
+        </nav>
+    </div>
+    <h2 class="title">Availables vehicles</h2>
+    <hr>
+
+
+    <div id="grid">
+
+        <div class="box1">
+            <picture>
+                <img src="https://via.placeholder.com/300x400/808080.png" data-src="images/honda1.jpg" alt="vehicles honda 1">
+            </picture>
+            <p>Honda Metropolitan (49cc) -1 person.</p>
+        </div>
+        <div class="box2">
+            <picture>
+                <img src="https://via.placeholder.com/300x400/808080.png" data-src="images/honda2.jpg" alt="vehicles honda 2">
+            </picture>
+            <p>Honda Dio (110cc) -2 person</p>
+        </div>
+        <div class="box3">
+            <picture>
+                <img src="https://via.placeholder.com/300x400/808080.png" data-src="images/honda3.jpg" alt="vehicles honda 3">
+            </picture>
+            <p>Honda PCX150 (149cc) -2 person.</p>
+        </div>
+        <div class="box4">
+            <picture>
+                <img src="https://via.placeholder.com/300x400/808080.png" data-src="images/honda4.jpg" alt="vehicles honda 4">
+            </picture>
+            <p>Honda Pioneer 1000 -2 person.</p>
+        </div>
+
+        <div class="box5">
+            <picture>
+                <img src="https://via.placeholder.com/300x400/808080.png" data-src="images/jeep1.jpg" alt="jeep 4 persons">
+            </picture>
+            <p>Jeep Wrangler 4 door 5 person A/C.</p>
+        </div>
+
+        <div class="box6">
+            <picture>
+                <img src="https://via.placeholder.com/300x400/808080.png" data-src="images/jeep2.jpg" alt="jeep 5 persons">
+            </picture>
+            <p>Jeep Wrangler 2 door open air 4 person.</p>
+        </div>
+
+
+
+    </div>
+
+
+    <div id="rents"></div>
+
+
+    <main>
+
+
+
+
+        <div id="table"></div>
+        <div class="contain">
+            <div class="contact">
+                <h5 class="firstline">Weather M Site</h5>
+                <h5>30 N 1st E</h5>
+                <h5>Preston, ID 83263</h5>
+                <h5> &#x260E; 999.999.9999</h5>
+                <h5>www.watwind.com</h5>
+                <div class="contacticons">
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+                        <img class="imgicon" src="images/facebook.png" alt="facebook logo"></a>
+                    <a href="https://no.pinterest.com/" target="_blank" rel="noopener">
+                        <img class="imgicon" src="images/pinterest.png" alt="pinterest logo logo">
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener">
+                        <img class="imgicon" src="images/youtube.png" alt="youtube logo">
+                    </a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener">
+                        <img class="imgicon" src="images/twiter.png" alt="youtube logo">
+                    </a>
+                    <a href="https://www.google.com/" target="_blank" rel="noopener">
+                        <img class="imgicon" src="images/google.png" alt="youtube logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <footer>
+        <h4>.</h4>
+        <p id="date">Last Updated: <span id="update"></span></p>
+        <h4>&copy; Carlos Gerez 2020
+            <a id="final" href="https://www.byui.edu/">BYUI</a></h4>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+
+
+
+</body>
+
+</html>
