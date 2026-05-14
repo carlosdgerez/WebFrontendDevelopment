@@ -417,3 +417,141 @@ template {
 [hidden] {
     display: none;
 }
+
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(135deg,#0f172a,#1e293b);
+    color:white;
+    min-height:100vh;
+}
+
+header {
+    padding:50px 10%;
+}
+
+.hero-content {
+    display:flex;
+    align-items:center;
+    gap:30px;
+
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:30px;
+
+    padding:30px;
+
+    box-shadow:
+    0 10px 40px rgba(0,0,0,.3),
+    0 0 50px rgba(59,130,246,.15);
+}
+
+.hero-content img {
+    width:140px;
+    height:140px;
+    border-radius:50%;
+        object-fit:cover;
+
+    border:4px solid rgba(255,255,255,.15);
+
+    box-shadow:
+    0 0 30px rgba(59,130,246,.5);
+}
+
+.hero-content h1 {
+    margin:0;
+    font-size:3rem;
+}
+
+.hero-content p {
+    opacity:.8;
+}
+
+main {
+    width:min(1000px,90%);
+    margin:auto;
+}
+
+.portal-title {
+    text-align:center;
+    margin:40px 0;
+    font-size:2rem;
+}
+
+nav ul {
+    list-style:none;
+    padding:0;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+        gap:20px;
+}
+
+nav li {
+    background:rgba(255,255,255,.04);
+
+    border-radius:20px;
+
+    padding:20px;
+
+    border:1px solid rgba(255,255,255,.06);
+
+    transition:.35s;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,.2);
+}
+
+nav li:hover {
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 0 30px rgba(59,130,246,.4);
+}
+
+nav a {
+    color:#60a5fa;
+    display:block;
+    margin-top:10px;
+    text-decoration:none;
+
+    
+    nav a:hover {
+    color:white;
+}
+
+footer {
+    margin-top:1080px;
+
+    padding:1px,2px;
+
+    text-align:center;
+
+    background:rgba(255,255,255,.04);
+
+    border-top:1px solid rgba(255,255,255,.05);
+}
+
+footer p {
+    margin:6px 10px;
+}
+
+
+footer a {
+    color:#60a5fa;
+}
+
+@media(max-width:760px){
+
+.hero-content{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-content h1{
+font-size:2rem;
+}
+
+}}
