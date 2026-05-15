@@ -18,11 +18,11 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-image: url('images/background.jpg');
+    background-image: url('/lesson-13/images/background.jpg');
 }
 
 .contain {
-    background-image: url('images/background.jpg');
+    background-image: url('/lesson-13/images/background.jpg');
 }
 
 #thanks {
