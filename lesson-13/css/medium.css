@@ -141,7 +141,8 @@
             section .information h1,
             p,
             h2 {
-                font-size: 1rem;
+                font-size: 1.2rem;
+                
             }
             .banner {
                 font-size: 1.2vw;
